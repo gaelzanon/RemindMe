@@ -5,6 +5,7 @@ import com.remindme.remindme_back.service.ReminderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
 
 @RestController
@@ -23,6 +24,11 @@ public class ReminderController {
     @GetMapping("/Reminders/{name}")
     public Reminder getReminder(@PathVariable String name) throws ExecutionException, InterruptedException {
         return reminderService.getReminder(name);
+    }
+
+    @GetMapping("/Reminders")
+    public ArrayList<Reminder> getAllReminders() throws ExecutionException, InterruptedException {
+        return reminderService.getAllReminders();
     }
 
     @DeleteMapping("Reminders/{name}")

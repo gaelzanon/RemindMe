@@ -44,4 +44,10 @@ class ReminderServiceTest {
 
         assertNotNull(reminderService.removeReminder("Test3"));
     }
+
+
+    @Test
+    void getAllReminders() throws ExecutionException, InterruptedException {
+        assertNotNull(reminderService.getAllReminders());
+    }
 }
