@@ -1,0 +1,39 @@
+{
+  "name": "remindme-frontend",
+  "version": "0.0.1",
+  "description": "Custom reminder app",
+  "productName": "RemindMe",
+  "author": "gaelzanon <al288187@uji.es>",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0",
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "postinstall": "quasar prepare"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.4",
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "quasar": "^2.16.0",
+    "vue": "^3.4.18",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^2.1.0",
+    "@types/node": "^20.5.9",
+    "autoprefixer": "^10.4.2",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3",
+    "typescript": "~5.5.3",
+    "vite-plugin-checker": "^0.9.0",
+    "vue-tsc": "^2.0.29"
+  },
+  "engines": {
+    "node": "^28 || ^26 || ^24 || ^22 || ^20 || ^18",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
