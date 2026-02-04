@@ -1,6 +1,8 @@
+# RemindMe
+
 ## Overview
 
-A mobile app prototype for creating custom reminders; project canceled after initial Firebase prototype.
+Proof-of-concept app for managing reminders with Firebase. Partial implementation of a planned feature set to demonstrate architecture and testing setup.
 
 ## Tech Stack
 
@@ -8,10 +10,11 @@ backend: Java, Spring Boot
 frontend: TypeScript, React
 database: Firebase
 
-## Features
 
-controller, model, service, Firebase integration, test skeletons.
+## Features Implemented
 
-## Improvements
+- REST API structure with controllers, models, and services  
+- Firebase integration for data storage  
+- Service testing skeleton
 
-Improved REST API architecture, testing setup.
+*Note:* Some planned features, such as alarm repetition, were not implemented as the project served primarily as a technical prototype.
